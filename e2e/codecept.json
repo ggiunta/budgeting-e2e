@@ -1,0 +1,27 @@
+{
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "http://localhost:8000",
+      "browser": "chrome",
+      "desiredCapabilities": {
+        "chromeOptions": {
+          "args": ["--start-maximized"]
+        }
+      }
+    }
+  },
+  "include": {
+    "I": "./support/steps_file.js",
+    "helpers": "./support/helpers.js",
+    "budgetPage": "./pages/budget.js"
+  },
+  "mocha": {},
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "gherkin": {},
+  "tests": "./tests/*_test.js",
+  "timeout": 10000,
+  "name": "codeceptjs-webdriverio-sample-project"
+}
